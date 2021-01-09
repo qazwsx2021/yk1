@@ -12,8 +12,3 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-./scripts/feeds update node
-rm ./package/feeds/packages/node
-rm ./package/feeds/packages/node-*
-./scripts/feeds install -a -p node
-make defconfig
